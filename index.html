@@ -3,6 +3,41 @@
 <head>
 	<title>gitPractice</title>
 	<link rel="stylesheet" href="all.css">
+
+	<script>
+		
+		var fun1 = function(){
+			
+			for(var i=3; i<=15; i++){
+				var oneLineResult = "";
+				for(var j=1; j<=15; j++){
+					let result = i * j ;
+					oneLineResult += i + "*" + j + "=" + result + "  ";
+					//console.log(i + "*" + j + "=" + result)
+				}
+				console.log(oneLineResult);
+			}
+
+  
+		};
+
+		var fun2Bmi = function(height, weight){			
+			var mHeight = height/100;
+			//var bmi = weight / mHeight / mHeight
+			var bmi = Math.round(weight / mHeight / mHeight * 10) / 10;
+			console.log("BMI:"+bmi);
+		}
+
+
+
+		document.addEventListener("DOMContentLoaded", function(){
+			fun1();
+			fun2Bmi(178, 70);
+		}); 
+	</script>
+
+
+
 </head>
 <body>
 	<div>See log</div>
