@@ -3,6 +3,32 @@
 <head>
 	<title>gitPractice</title>
 	<link rel="stylesheet" href="all.css">
+
+	<script>
+		
+		var fun1 = function(){
+			
+			for(var i=3; i<=15; i++){
+				var oneLineResult = "";
+				for(var j=1; j<=15; j++){
+					let result = i * j ;
+					oneLineResult += i + "*" + j + "=" + result + "  ";
+					//console.log(i + "*" + j + "=" + result)
+				}
+				console.log(oneLineResult);
+			}
+
+  
+		};
+
+
+		document.addEventListener("DOMContentLoaded", function(){
+			fun1();
+		}); 
+	</script>
+
+
+
 </head>
 <body>
 	<div>See log</div>
