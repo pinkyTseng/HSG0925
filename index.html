@@ -21,9 +21,18 @@
   
 		};
 
+		var fun2Bmi = function(height, weight){			
+			var mHeight = height/100;
+			//var bmi = weight / mHeight / mHeight
+			var bmi = Math.round(weight / mHeight / mHeight * 10) / 10;
+			console.log("BMI:"+bmi);
+		}
+
+
 
 		document.addEventListener("DOMContentLoaded", function(){
 			fun1();
+			fun2Bmi(178, 70);
 		}); 
 	</script>
 
